@@ -28,15 +28,15 @@ Partial Class Form1
         Me.lblAppName = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.txtYearlySalary = New System.Windows.Forms.TextBox()
         Me.lblWholeYearSalary = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtWeeklySalary = New System.Windows.Forms.TextBox()
+        Me.txtYearlySalary = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtBiweeklySalary = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtWeeklySalary = New System.Windows.Forms.TextBox()
+        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.btnPrint = New System.Windows.Forms.Button()
         Me.printMain = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,6 +90,24 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
+        'lblWholeYearSalary
+        '
+        Me.lblWholeYearSalary.AutoSize = True
+        Me.lblWholeYearSalary.Location = New System.Drawing.Point(103, 26)
+        Me.lblWholeYearSalary.Name = "lblWholeYearSalary"
+        Me.lblWholeYearSalary.Size = New System.Drawing.Size(86, 16)
+        Me.lblWholeYearSalary.TabIndex = 8
+        Me.lblWholeYearSalary.Text = "1-Year Salary"
+        '
+        'txtYearlySalary
+        '
+        Me.txtYearlySalary.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtYearlySalary.Location = New System.Drawing.Point(199, 22)
+        Me.txtYearlySalary.Name = "txtYearlySalary"
+        Me.txtYearlySalary.Size = New System.Drawing.Size(200, 25)
+        Me.txtYearlySalary.TabIndex = 7
+        Me.txtYearlySalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -104,72 +122,6 @@ Partial Class Form1
         Me.GroupBox2.Size = New System.Drawing.Size(472, 94)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
-        '
-        'btnCalculate
-        '
-        Me.btnCalculate.BackColor = System.Drawing.Color.YellowGreen
-        Me.btnCalculate.Cursor = System.Windows.Forms.Cursors.Default
-        Me.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCalculate.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(399, 235)
-        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(87, 28)
-        Me.btnCalculate.TabIndex = 5
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = False
-        '
-        'btnClear
-        '
-        Me.btnClear.BackColor = System.Drawing.Color.IndianRed
-        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Default
-        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClear.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(399, 373)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(87, 28)
-        Me.btnClear.TabIndex = 6
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = False
-        '
-        'txtYearlySalary
-        '
-        Me.txtYearlySalary.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtYearlySalary.Location = New System.Drawing.Point(199, 22)
-        Me.txtYearlySalary.Name = "txtYearlySalary"
-        Me.txtYearlySalary.Size = New System.Drawing.Size(200, 25)
-        Me.txtYearlySalary.TabIndex = 7
-        Me.txtYearlySalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'lblWholeYearSalary
-        '
-        Me.lblWholeYearSalary.AutoSize = True
-        Me.lblWholeYearSalary.Location = New System.Drawing.Point(103, 26)
-        Me.lblWholeYearSalary.Name = "lblWholeYearSalary"
-        Me.lblWholeYearSalary.Size = New System.Drawing.Size(86, 16)
-        Me.lblWholeYearSalary.TabIndex = 8
-        Me.lblWholeYearSalary.Text = "1-Year Salary"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(103, 27)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 16)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Weekly"
-        '
-        'txtWeeklySalary
-        '
-        Me.txtWeeklySalary.BackColor = System.Drawing.Color.Beige
-        Me.txtWeeklySalary.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtWeeklySalary.Location = New System.Drawing.Point(199, 22)
-        Me.txtWeeklySalary.Name = "txtWeeklySalary"
-        Me.txtWeeklySalary.ReadOnly = True
-        Me.txtWeeklySalary.Size = New System.Drawing.Size(200, 26)
-        Me.txtWeeklySalary.TabIndex = 9
-        Me.txtWeeklySalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
@@ -191,6 +143,54 @@ Partial Class Form1
         Me.txtBiweeklySalary.TabIndex = 11
         Me.txtBiweeklySalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(103, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(52, 16)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Weekly"
+        '
+        'txtWeeklySalary
+        '
+        Me.txtWeeklySalary.BackColor = System.Drawing.Color.Beige
+        Me.txtWeeklySalary.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtWeeklySalary.Location = New System.Drawing.Point(199, 22)
+        Me.txtWeeklySalary.Name = "txtWeeklySalary"
+        Me.txtWeeklySalary.ReadOnly = True
+        Me.txtWeeklySalary.Size = New System.Drawing.Size(200, 26)
+        Me.txtWeeklySalary.TabIndex = 9
+        Me.txtWeeklySalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnCalculate
+        '
+        Me.btnCalculate.BackColor = System.Drawing.Color.YellowGreen
+        Me.btnCalculate.Cursor = System.Windows.Forms.Cursors.Default
+        Me.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCalculate.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.Location = New System.Drawing.Point(399, 235)
+        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(87, 28)
+        Me.btnCalculate.TabIndex = 5
+        Me.btnCalculate.Text = "&Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = False
+        '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.IndianRed
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Default
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(399, 373)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(87, 28)
+        Me.btnClear.TabIndex = 6
+        Me.btnClear.Text = "Cl&ear"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
         'btnPrint
         '
         Me.btnPrint.BackColor = System.Drawing.Color.Gold
@@ -202,7 +202,7 @@ Partial Class Form1
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.Size = New System.Drawing.Size(87, 28)
         Me.btnPrint.TabIndex = 7
-        Me.btnPrint.Text = "Print"
+        Me.btnPrint.Text = "&Print"
         Me.btnPrint.UseVisualStyleBackColor = False
         '
         'printMain
